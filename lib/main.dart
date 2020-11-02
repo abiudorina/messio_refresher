@@ -1,40 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:messio_refresher/pages/conversation_page_list.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Messio());
 }
 
-class MyApp extends StatelessWidget {
+class Messio extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primaryColor: Colors.blueAccent,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Messio Refresher'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Text('Hello World!'),
-      ),
+      home: ConversationPageList(),
     );
   }
 }

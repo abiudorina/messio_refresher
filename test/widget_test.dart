@@ -12,7 +12,7 @@ import 'package:messio_refresher/main.dart';
 void main() {
   testWidgets('loads main', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(Messio());
 
     // Verify that our counter starts at 0.
     expect(find.text('Hello World!'), findsOneWidget);
